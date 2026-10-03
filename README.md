@@ -1,177 +1,90 @@
-# Playable Factory — Product Manager case study
+# Playable Factory — Product Manager Case Study
 
-Research, analysis and report-production package prepared by **Kayra Şener**, with AI-assisted research and production.
+A product-management case study prepared by **Kayra Şener**, with AI-assisted research, analysis and report production.
 
-The case demonstrates how a genuine product benefit can become a short playable experience and be evaluated against a commercial outcome. It covers Fugo/Words of Wonders and Picnic, a Ready product proposal, three playable reviews, banners, ten prospects and two campaign reports.
+The case connects a genuine product benefit, a short playable interaction and a measurable commercial outcome. It covers commercial strategy for Fugo and Picnic, a Ready product proposal, three playable reviews, a non-game adaptation, display banners, prospect research and campaign analysis.
 
-Research cutoff: **03 October 2026**. The final report has **43 pages**, **50 registered source inputs**, **46 external references** and **56 embedded attachments**.
+**Research and production period:** 02–03 October 2026.
 
-## Start here
+## Reading guide
 
-| Reader / purpose | File |
-| --- | --- |
-| Recruiter reviewing the case | The separately supplied `Playable_Factory_Case_Study.pdf` |
-| Understanding implementation and verification | [Developer log](docs/DEVELOPER_LOG.md) |
-| Understanding AI use and my contribution | [AI usage log](docs/AI_USAGE_LOG.md) and [contribution statement](docs/Contribution_Statement.md) |
-| Reviewing the project history | [Research workflow and production history](docs/Research_Workflow_and_Production_History.md) |
-| Reviewing the concise audit account | [Research and verification log](docs/Research_and_Verification_Log.md) |
-| Continuing the project with AI | [Revised master prompt](MASTER_PROMPT_REVISED.md) |
-| Reproducing calculations and PDF production | The commands and script map below |
-
-The supplied archive contains the documentation, original inputs, screenshots, calculation code, portable PDF builder, fonts and audit records. The final PDF is distributed separately and can be regenerated from this package. This is a repository-ready folder, not an already published GitHub repository.
-
-## Project purpose and division of labor
-
-I designed the research tree and source-file requirements, selected companies and transferable features, analyzed the evidence, played the ads, supplied insights and creative direction, reviewed each stage and finalized the report and manual intervention logs.
-
-GPT 5.6 Sol mainly supported data gathering and summarization. GPT Astra supported research, source completion, technical elaboration, report writing, structure, visuals and revisions. NotebookLM and Claude Cowork were used in an initial summary-mediated workflow; I discarded that report and worked directly from the source files with Astra because more detail was needed.
-
-AI assisted the wording and production. The logs describe this collaboration and distinguish human judgment, AI synthesis and deterministic verification.
-
-## Repository layout
-
-| Path | Role |
-| --- | --- |
-| `README.md` | Navigation, file/script purposes, reproduction and maintenance guidelines |
-| `MASTER_PROMPT_REVISED.md` | Current AI instruction set for revision or reproduction |
-| `docs/` | Detailed logs and concise supporting statements |
-| `project_sources/` | Original numbered manual, data, guides and gameplay descriptions |
-| `upload/` | Original master-prompt copy and gameplay PNGs used by the builder |
-| `data/` | Working raw CSV, recalculation script and regenerated metrics |
-| `scripts/` | Portable report builder and package verifier |
-| `assets/fonts/` | DejaVu font files used by the builder and their license notice |
-| `audit/` | Source hashes, external evidence records, page map and recorded layout warnings |
-| `output/manual_intervention/` | Four rationale logs and the process-history input embedded in the report |
-| `output/pdf/` | Generated draft and final PDFs; created by the builder |
-| `requirements.txt` | Captured versions of the installed PDF-production dependencies |
-
-Generated PDF files and local environments are excluded by `.gitignore`. The archive does not include retrieval caches, session metadata, upload credentials or application-specific transfer helpers.
-
-## Source-file map
-
-The numeric prefix is the exact filename prefix in `project_sources/`. Original guide titles retain their task numbering.
-
-| Prefix / file | Purpose | Use |
-| --- | --- | --- |
-| 01 — `recalculate.py` | Original calculation implementation | Preserved reference; run the working copy in `data/` |
-| 02 — `campaign_raw.csv` | Eight-row transcription of the raw PDF | Preserved numeric source |
-| 03 — `campaign_metrics.csv` | Supplied 18-row derived-metric file | Reconciliation reference |
-| 04 — `Task_5_2_Raw_Campaign_Data.pdf` | Primary campaign-data snapshot | Authority for supplied values |
-| 05 — `PF_Product_Manager_Case_Study.pdf` | Original task manual | Authority for requirements and limits |
-| 06 — `manual_extracted.txt` | Manual text extraction | Reading/navigation aid |
-| 07 — `MASTER_PROMPT-1-.md` | Original execution prompt | Historical input |
-| 08 — `11_Task_5_3_AI_Workflow.md` | Sensor Tower-assisted workflow guide | Task 5.3 research/architecture direction |
-| 09 — `08_Task_5_1_Prospect_Research.md` | Prospect criteria and seeds | Qualification method |
-| 10 — `07_Task_4_Banner_Concepts.md` | Banner research and format guidance | Task 4 creative direction |
-| 11 — `06_Task_3_Playable_Evaluation.md` | Exact exports and observation protocol | Task 3 evaluation structure |
-| 12 — `00_README.md` | Original research-kit overview | Historical guide to preparation |
-| 13 — `09_Task_5_2_Calculated_Tables.md` | Supplied rounded calculation tables | Audit reference |
-| 14 — `12_Task_5_4_AI_Log.md` | Original AI-log preparation guide | Disclosure structure |
-| 15 — `13_Delivery_and_QA.md` | Output limits and QA guidance | Production checks |
-| 16 — `14_Sources_and_Evidence.md` | Original S-series source register | Preparation-stage evidence context |
-| 17 — `01_Case_Requirements.md` | Scope and requirement mapping | Deliverable traceability |
-| 18 — `05_Task_2_Product_Improvement.md` | Ready improvement guide | Proposal development |
-| 19 — `10_Task_5_2_Analysis_and_Reports.md` | Campaign interpretation guide | Report structure and denominator rules |
-| 20 — `04_Task_1_Concept_and_Wireframe.md` | Concept and screen-flow specification | Wireframe development |
-| 21 — `02_Market_and_Product_Context.md` | Product/capability research guide | Commercial/product baseline |
-| 22 — `03_Task_1_Prospecting_and_Onboarding.md` | Company selection and onboarding guide | Task 1 commercial approach |
-| 23 — `clean_it_description.txt` | My Clean It! playthrough description | Gameplay mechanics, timing and behavior |
-| 24 — `all-in-hole-description.txt` | My All in Hole playthrough description | Gameplay mechanics, sound and behavior |
-| 25 — `squad_busters_description.txt` | My Squad Busters playthrough description | Gameplay mechanics and reward flow |
-
-Guides are preserved research inputs. Their suggested concepts and company seeds are not a substitute for the final evidence ledger.
-
-The report's F-series file IDs are assigned by the builder; they do not correspond directly to these numeric prefixes. For example, F23 is the top-level original prompt copy, while F24–F26 are the three gameplay descriptions. Use `audit/source_manifest.json` for exact F-ID mappings.
-
-## Audit and context files
+Start with the case-study PDF in the repository root for the complete analysis, recommendations, wireframe and research appendix. The supporting files explain the workflow, evidence and contribution behind the report.
 
 | File | Purpose |
 | --- | --- |
-| `audit/source_manifest.json` | Exact F01–F50 mapping, paths, byte sizes, SHA-256 hashes and uses |
-| `audit/external_evidence_ledger.json` | E01–E46 source URLs, publishers, supported claims, scope and dates |
-| `audit/report_toc.json` | Final report page/section/title map |
-| `audit/layout_warnings.json` | Automated geometry-warning result from the final production export |
-| `docs/DEVELOPER_LOG.md` | Extensive source architecture, implementation, calculations, production and maintenance account |
-| `docs/AI_USAGE_LOG.md` | Extensive model/tool use, task contributions, workflow history and verification account |
-| `docs/Research_Workflow_and_Production_History.md` | Concise cross-tool process history |
-| `docs/Research_and_Verification_Log.md` | Concise evidence and numerical-control record |
-| `docs/Contribution_Statement.md` | My contribution and AI-assistance disclosure |
-| `output/manual_intervention/manual_intervention_log_01_task_1_brand_choice.md` | Company-pairing rationale |
-| `output/manual_intervention/manual_intervention_log_02_task_2_ready_approval.md` | Ready proposal rationale |
-| `output/manual_intervention/manual_intervention_log_03_task_4_banner_priority.md` | First banner-test rationale |
-| `output/manual_intervention/manual_intervention_log_04_task_5_campaign_priority.md` | First campaign-investigation rationale |
+| [DEVELOPER_LOG.md](./DEVELOPER_LOG.md) | Detailed account of research architecture, task implementation, calculations, report production and verification |
+| [AI_USAGE_LOG.md](./AI_USAGE_LOG.md) | Model/tool roles, task-by-task contributions, the source workflow and AI-assisted checks |
+| [MASTER_PROMPT.md](./MASTER_PROMPT.md) | Instructions for working with the case materials and continuing the research/reporting workflow |
+| [Research workflow and production history](./logs/Research_Workflow_and_Production_History.md) | Project history, source handling and division of labor |
+| [Research and verification log](./logs/Research_and_Verification_Log.md) | Evidence scope, numerical controls and verification methods |
 
-The process-history copy in `output/manual_intervention/` is one of the report's registered inputs. The copy in `docs/` provides reader-facing navigation. Keep them synchronized if the process account changes.
+## Folder structure
 
-## Script map and execution behavior
+| Location | Contents and purpose |
+| --- | --- |
+| Repository root | Case-study PDF, developer log, AI usage log, master prompt and this README |
+| [descriptions/](./descriptions/) | My written playthrough descriptions of the three playable ads |
+| [logs/](./logs/) | Research workflow, production history and verification records |
+| [screenshots/](./screenshots/) | Gameplay screenshots organized by playable |
+| [sources/](./sources/) | Case manual, research guides, source register, calculation tables, campaign metrics and calculation script |
 
-| Script | Reads | Writes / checks |
+## Gameplay evidence
+
+I played the three ads and documented their mechanics, progression, timing and end behavior. The descriptions provide the basis for behavioral observations; screenshots support the visual and interface assessment.
+
+| Playable | Description | Screenshots |
 | --- | --- | --- |
-| `data/recalculate.py` | `data/campaign_raw.csv` | Overwrites `data/campaign_metrics.csv`; writes root-level `09_Task_5_2_Calculated_Tables.md`; prints campaign controls |
-| `scripts/build_report.py` | Source files, images, working CSVs, rationale/history files and fonts | Creates `output/pdf/draft.pdf` and final PDF; updates TOC and layout-warning JSON |
-| `scripts/verify_package.py` | Working/supplied CSVs, manifest, source bytes, evidence ledger, TOC and warning JSON | Validates fixed-case invariants; optional `--pdf` inspects PDF pages, attachments and embedded source hashes |
+| Squad Busters | [squad_busters_description.txt](./descriptions/squad_busters_description.txt) | [Squad Busters sequence](./screenshots/squad%20busters/) |
+| Clean It! | [clean_it_description.txt](./descriptions/clean_it_description.txt) | [Clean It sequence](./screenshots/clean%20it/) |
+| All in Hole | [all in hole description.txt](./descriptions/all%20in%20hole%20description.txt) | [All in Hole sequence](./screenshots/all%20in%20hole/) |
 
-The recalculation script uses the Python standard library. The report builder requires ReportLab, PyMuPDF and Pillow. The verifier uses the standard library unless its optional PDF check is requested.
+The report develops exactly three proposed changes per playable, with rationale and validation measures. Its Picnic adaptation translates the collection-and-growth interaction into gathering ingredients for dinner.
 
-The original prefix-named calculation script expects unprefixed CSV names beside itself, so run `data/recalculate.py` instead of executing the preserved copy in `project_sources/`.
+## Source and guideline map
 
-## Reproduce the calculations
+The numbered Markdown files organize the research by task. They document research directions, methods and production guidelines. Source-backed findings and the final recommendations are presented in the case-study report.
 
-Use Python 3; the production runtime was Python 3.12. Run these commands from the repository root:
+| File | Purpose |
+| --- | --- |
+| [00_README_PROMPT.md](./sources/00_README_PROMPT.md) | Overview of the research materials and execution approach |
+| [01_Case_Requirements.md](./sources/01_Case_Requirements.md) | Task scope, output limits and requirement mapping |
+| [02_Market_and_Product_Context.md](./sources/02_Market_and_Product_Context.md) | Playable Factory capabilities and commercial/product context |
+| [03_Task_1_Prospecting_and_Onboarding.md](./sources/03_Task_1_Prospecting_and_Onboarding.md) | Company selection, client approach and onboarding guidance |
+| [04_Task_1_Concept_and_Wireframe.md](./sources/04_Task_1_Concept_and_Wireframe.md) | Concept development and screen-flow specification |
+| [05_Task_2_Product_Improvement.md](./sources/05_Task_2_Product_Improvement.md) | Ready proposal, implementation scope and validation guidance |
+| [06_Task_3_Playable_Evaluation.md](./sources/06_Task_3_Playable_Evaluation.md) | Playable evaluation protocol and non-game adaptation guidance |
+| [07_Task_4_Banner_Concepts.md](./sources/07_Task_4_Banner_Concepts.md) | Static/animated display-banner concepts and format requirements |
+| [08_Task_5_1_Prospect_Research.md](./sources/08_Task_5_1_Prospect_Research.md) | Prospect qualification rules, candidate research and evidence fields |
+| [09_Task_5_2_Calculated_Tables.md](./sources/09_Task_5_2_Calculated_Tables.md) | Campaign and segment metrics in readable audit tables |
+| [10_Task_5_2_Analysis_and_Reports.md](./sources/10_Task_5_2_Analysis_and_Reports.md) | Campaign interpretation, metric selection and report guidance |
+| [11_Task_5_3_AI_Workflow.md](./sources/11_Task_5_3_AI_Workflow.md) | Proposed Sensor Tower + AI prospecting workflow |
+| [12_Task_5_4_AI_Log.md](./sources/12_Task_5_4_AI_Log.md) | Guidance for documenting actual AI use and human contribution |
+| [13_Delivery_and_QA.md](./sources/13_Delivery_and_QA.md) | Presentation, numerical, evidence and layout checks |
+| [14_Sources_and_Evidence.md](./sources/14_Sources_and_Evidence.md) | Preparation-stage source register and verification scope |
+| [PF_Product_Manager_Case_Study.pdf](./sources/PF_Product_Manager_Case_Study.pdf) | Original case brief and deliverable requirements |
+| [manual_extracted.txt](./sources/manual_extracted.txt) | Text extraction of the case manual for reading and navigation |
+| [campaign_metrics.csv](./sources/campaign_metrics.csv) | Machine-readable metrics at campaign-cell, total, geography and OS levels |
+| [recalculate.py](./sources/recalculate.py) | Python calculation logic used to validate counts, aggregate observations and derive campaign ratios |
 
-```bash
-python data/recalculate.py
-python scripts/verify_package.py
-```
+## Research and calculation method
 
-Expected controls:
+The analysis uses official product/company material, app records, company profiles and dated advertising observations. Product facts inform the creative concepts; proposed improvements include a mechanism and a way to test the intended benefit.
 
-| Campaign | Spend USD | Conversions | Total cost per conversion |
+Gaming prospect qualification considers casual/puzzle fit, app/publisher identity, studio scale and recent US/European acquisition-ad observations. The non-gaming vertical is app-based online grocery shopping and home delivery in Europe. Ad observations are acquisition signals; company-profile size bands are self-reported.
+
+Campaign analysis uses eight supplied campaign × geography × operating-system observations. The calculation script produces 18 derived rows covering the original cells and campaign, geography and OS aggregates. Total ratios use summed numerators and denominators.
+
+| Campaign | Spend | Outcomes | Total cost per outcome |
 | --- | ---: | ---: | ---: |
-| Puzzle Game X | 20,000 | 7,160 installs | 2.793296 CPI |
-| Grocery App Y | 14,400 | 1,810 first orders | 7.955801 CPA |
+| Puzzle Game X | $20,000 | 7,160 installs | $2.793296 CPI |
+| Grocery App Y | $14,400 | 1,810 first orders | $7.955801 CPA |
 
-The verifier checks eight raw rows, 18 unique derived rows, all 50 source hashes, 46 evidence records, the 43-page recorded map and an empty recorded geometry-warning list. It does not re-open external websites or independently validate source truth.
+The reports distinguish descriptive results, possible explanations and recommended tests. Historical efficiency informs investigation and bounded experiments. Proposed playable events and downstream quality measures explain how a real pilot could be evaluated.
 
-## Rebuild and inspect the PDF
+## Workflow and contribution
 
-Install the captured dependency versions:
+I created the research tree and source-file requirements, selected the companies and transferable features, analyzed the evidence, played the ads and supplied commercial and creative insights. I reviewed each stage and finalized the report and manual intervention logs.
 
-```bash
-python -m pip install -r requirements.txt
-python scripts/build_report.py
-python scripts/verify_package.py --pdf output/pdf/Playable_Factory_Case_Study.pdf
-```
+GPT 5.6 Sol mainly supported data gathering and summarization. GPT Astra supported research, source completion, technical elaboration, report structure, writing, visuals and revisions. I initially used NotebookLM with Claude Cowork as a source-summary workflow, then moved to direct source files with Astra to retain the detail needed for the report.
 
-The builder writes the PDF and prints page, attachment, warning and byte-size information. It uses bundled fonts and resolves paths relative to the repository, without the original workspace path.
-
-For visual inspection with Poppler installed:
-
-```bash
-mkdir -p audit/rendered
-pdftoppm -scale-to 1400 -png output/pdf/Playable_Factory_Case_Study.pdf audit/rendered/page
-```
-
-Inspect the rendered pages for clipping, legibility, table spacing, screenshot proportions and source-footnote placement. Automated bounds checks support this review; they do not replace it.
-
-A rebuilt PDF can differ byte-for-byte because metadata and library serialization vary. Verify its content, source hashes, calculations, page map and attachment inventory rather than expecting an identical file hash.
-
-## Research and revision guidelines
-
-Use the manual for requirements and the raw PDF for campaign values. Use my descriptions for gameplay behavior and screenshots for visible states. Use official sources for identity/capabilities and dated ad observations for UA qualification.
-
-Keep the original inputs unchanged. Calculate from working copies. Record source access dates and observation dates separately. Refresh time-sensitive ownership, product, market and ad facts when updating the cutoff.
-
-Ratios use summed counts, not averaged row percentages. Average time has an unspecified measurement base and is not aggregated. The dataset supplies no revenue, retention, margin, campaign dates or attribution window. Interpret differences descriptively until event/cohort definitions and causal factors are tested.
-
-The revised master prompt is current revision guidance; original prompts are historical inputs. Update logs with actual work only. The report and personal statements use first-person or neutral language and concise, complete analytical reasoning.
-
-When inputs or report structure change, update manifests, ledgers, page maps, logs and documentation together. The builder includes every PNG in `upload/`, so adding images changes the source inventory and may change register pages.
-
-## Sharing and scope
-
-The package is designed for recruiter review and technical inspection. It does not perform external publication, recruiter submission, prospect outreach or campaign execution. Sensor Tower access is assumed only in the proposed workflow; no API call was made.
-
-The original brief and data were supplied for a recruitment case. Confirm their redistribution terms before making the complete inputs public. No general reuse license is granted for third-party source documents or screenshots. The bundled font notice covers the font files.
-
-Prompt screenshots and conversation links are handled separately. This package is a project-level production record, not a complete cross-application conversation transcript.
+AI assisted wording and production. I retained responsibility for the analysis, judgments, creative direction, review and finalization. The [AI usage log](./AI_USAGE_LOG.md), [developer log](./DEVELOPER_LOG.md) and [research history](./logs/Research_Workflow_and_Production_History.md) provide the detailed account.
