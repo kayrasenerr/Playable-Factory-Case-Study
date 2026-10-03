@@ -1,0 +1,84 @@
+Playable Factory | Product Manager Case Study
+You have 2 days. Good luck!
+Playable Factory works with both game companies and non-gaming brands and apps. Every task in this case has
+a gaming side and a non-gaming side, so we can see how you think across both.
+AI is allowed and encouraged in every task. We want to see how you use it, not whether you use it. Task 5 is
+dedicated to AI, and it also asks for a short log of how you used AI across the whole case. Using AI will never cost
+you points. Submitting unverified or made-up information will.
+
+Task 1 | Identifying New Market Opportunities
+Choose two companies that you think could benefit from our services:
+    • 1A: a game company
+    • 1B: a non-gaming brand or app (any vertical you like)
+For each company:
+1.1 Explain why you chose this company and how it can benefit from playable ads. For 1B, also explain what the
+playable should drive (install, sign-up, first purchase, store visit, etc.) and why that goal fits the brand.
+1.2 Provide a step-by-step strategy for how Playable Factory could approach and onboard this company as a
+client. Point out what changes between approaching a game company and a non-gaming brand (decision makers,
+buying process, objections, success metrics).
+1.3 Create a playable ad concept for one of your two companies (gaming or non-gaming, your choice). Outline:
+    • Objectives
+    • Target audience
+    • Key message
+1.4 Design a basic wireframe or mockup of the playable ad flow for your 1.3 concept.
+Present Task 1 as a short client-facing deck (max 8 slides for both companies combined).
+
+Task 2 | Proposing Product Improvement
+Choose one of Playable Factory's products: Insight, Ready, Flex.
+2.1 Identify potential areas for improvement or additional features that could enhance its functionality. Show how
+your improvement serves both a gaming client and a non-gaming client. If it only fits one, explain the trade-off.
+2.2 Prepare a one-page proposal presentation to promote the chosen product.
+
+Task 3 | Evaluating Playable Factory's Playables
+3.1 Evaluate the following playable ads created using Playable Studio. For each playable:
+    • Provide a brief description of the game mechanics
+    • Identify three critical improvements or changes
+    • Explain why you would implement them
+Playables to evaluate:
+    • Squad Busters
+    • Clean It!
+    • All in Hole
+3.2 Pick one of the three mechanics and adapt it for a non-gaming brand of your choice. Describe the brand, the
+adapted flow in 3 to 5 steps, and the end-card call to action. Explain what you kept from the original and what you
+had to change so it works for a non-gaming audience.
+
+Task 4 | Three Innovative and Engaging Banner Concepts
+4.1 Provide three innovative banner concepts designed to captivate and engage users effectively. At least one
+must be for a game and at least one for a non-gaming brand. (Text only)
+“Banner” here means a static or animated display ad, not a playable.
+Task 5 | AI in Your Workflow
+Use any AI tools you like (Claude, ChatGPT, Gemini, Perplexity, etc.). We care about how you guide the tool, how
+you check its output, and what you do with it.
+5.1 AI-assisted prospecting. Build a list of 10 potential clients:
+    •    5 game companies: independent or mid-size studios, not the big publishers (so no Zynga, Scopely or
+         similar), each with at least one casual or puzzle mobile game that has recent user acquisition activity in
+         the US or Europe.
+    • 5 non-gaming companies (each with its app) from a narrow vertical you define yourself (for example
+         “grocery delivery apps in MENA” or “European neobanks”). Tell us why you picked that vertical.
+For each prospect include: company, app, why it is a good fit, source link, company website and LinkedIn page,
+the role you would contact first.
+5.2 Raw data to report. This sheet has raw performance data from two playable campaigns: Puzzle Game X (a
+puzzle game, conversions = installs) and Grocery App Y (a grocery delivery app, conversions = first orders). Turn
+it into a short client-facing report for each client (one page or up to 3 slides each).
+The brief is open on purpose. Decide which metrics matter to each client and which to leave out, and explain why.
+Also list any metrics we could track inside a playable that are not in this data but would be meaningful to each
+client. End each report with 2 or 3 recommendations.
+5.3 Designing an AI workflow. Assume you have Sensor Tower API access and an AI assistant that can call it.
+In half a page, describe how you would build a repeatable workflow that:
+    1. Lists games that match a given target (genre, market, downloads, ad activity)
+    2. Finds each publisher's website and LinkedIn page
+    3. Identifies the relevant people to contact at each publisher
+Include example prompts, which data points you would pull, how you would check quality, and the limits or risks
+you see.
+5.4 AI log (required, covers the whole case). For each task, tell us briefly:
+   • Which AI tools you used and for what
+   • Share links or screenshots of your key prompts and conversations
+   • One place where the AI output was wrong or weak, and how you caught and fixed it
+   • One thing you chose not to use AI for, and why
+Keep 5.4 to one page.
+
+Submission Guidelines
+    •   Send everything within 3 days as one PDF or deck, plus any links (AI conversations, mockups, sheets).
+    •   Label each answer with its task number (1.1, 5.2, etc.).
+    •   Make sure every shared link is set so anyone with the link can view it.
+
